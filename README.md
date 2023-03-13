@@ -15,6 +15,7 @@ The user must provide a `string of text` to create images based on this string a
 The service has several parameters that allow you to select the `type of model`:
 
 * `dalle`: Min-Dalle
+* `Stable Diffusion`: Stable Diffusion
 * `beksinski`: Stable Diffusion Beksinski Art
 * `guohua`: Stable Diffusion Guohua
 * `waifu`: Stable Diffusion Anime
