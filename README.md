@@ -31,7 +31,7 @@ Inputs:
   
   For Stable Diffusion:
   
-  * `seed`- seed generation
+  * `seedVal`- seed generation
   * `n_images` - number of images
   * `steps` - generation steps
   * `H` - image height
