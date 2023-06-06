@@ -4,16 +4,11 @@ package image_generation;
 
 message Text {
     string sentence = 1;
-    bool dalle = 2;
-    bool beksinski = 3;
-    bool guohua = 4;
-    bool waifu = 5;
-    int32 seedVal = 6;
-    int32 n_images = 7;
-    int32 steps = 8;
-    int32 H = 9;
-    int32 W = 10;
-    string prompt_style = 11;
+    string model = 2;
+    int32 seedVal = 3;
+    int32 n_images = 4;
+    int32 steps = 5;
+    string prompt_style = 6;
 }
 
 message Image {
