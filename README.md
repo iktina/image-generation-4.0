@@ -15,8 +15,8 @@ The user must provide a `string of text` to create images based on this string a
 The service has several parameters that allow you to select the `type of model`:
 
 * `SD2_1`: Stable Diffusion v2.1
-* `SD2`: Stable Diffusion
-* `SD1_5`: Stable Diffusion
+* `SD2`: Stable Diffusion v2.0
+* `SD1_5`: Stable Diffusion v1.5
 * `beksinski`: Stable Diffusion Beksinski Art
 * `guohua`: Stable Diffusion Guohua
 * `waifu`: Stable Diffusion Anime
