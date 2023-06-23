@@ -9,6 +9,8 @@ message Text {
     int32 n_images = 4;
     int32 steps = 5;
     string prompt_style = 6;
+    bytes image = 7;
+    string negative_prompt = 8;
 }
 
 message Image {
