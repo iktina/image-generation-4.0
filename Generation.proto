@@ -11,6 +11,9 @@ message Text {
     string prompt_style = 6;
     bytes image = 7;
     string negative_prompt = 8;
+    int32 H = 9;
+    int32 W = 10;
+    double guidance_scale = 11;
 }
 
 message Image {
