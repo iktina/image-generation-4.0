@@ -27,6 +27,8 @@ The service has several parameters that allow you to select the `type of model`:
 * `dalle`: Min-Dalle
 * `scribble`: ControlNet Scribble img2img
 * `img2img`: Stable Diffusion img2img
+* `kandinsky2_1`: Kandinsky v2.1
+* `kandinsky2_2`: Kandinsky v2.2
 
 The `model` parameter is responsible for selecting the model
 
@@ -44,6 +46,7 @@ Inputs:
   * `n_images` - number of images
   * `steps` - generation steps
   * `prompt_style` - add-ons for text (detailed, portrait photography realistic, animal, interior, postapocalyptic, steampunk, nature from tales, cinematic, cozy interior)
+
 
 ## Expected result
 
@@ -102,134 +105,3 @@ Inputs:
 **Input image:** / **Output image:** / **Output image:**                                                     
 
 <img src=https://i6.imageban.ru/out/2023/06/23/571b8933bdad09ef0eaead95c45a30e0.png width="280" > <img src=https://i4.imageban.ru/out/2023/06/23/d17f3f313c426a36a46cb3f3e7952baa.png width="280" > <img src=https://i3.imageban.ru/out/2023/06/23/38387206082d7dfa88098cf96bd5a2d2.png width="280" >
-
-
----
-
-# Neural Image Generation version 3.0
-
-## Welcome
-The service receives a text and uses it as an input for a pre-trained model.
-
-## What’s the point?
-The service generates images that correspond to the text using machine learning methods. The service receives a text string and outputs images in binary format, representing generated images based on the received text. 
-
-## How does it work?
-
-This implementation assumes the use of one of two generation models at the user's choice `Min-Dalle` and `Stable Diffusion`.
-
-The user must provide a `string of text` to create images based on this string and `select a model` to generate.
-
-The service has several parameters that allow you to select the `type of model`:
-
-* `SD2_1`: Stable Diffusion v2.1
-* `SD2`: Stable Diffusion v2.0
-* `SD1_5`: Stable Diffusion v1.5
-* `beksinski`: Stable Diffusion Beksinski Art
-* `guohua`: Stable Diffusion Guohua
-* `waifu`: Stable Diffusion Anime
-* `inkpunk`: Stable Diffusion Inkpunk
-* `dream_shaper`: Stable Diffusion DreamShaper
-* `open_journey`: Stable Diffusion Openjourney
-
-The `model` parameter is responsible for selecting the model
-
-Inputs:
-
-* `metod`: image_generation
-* `input_data`: 
-  * a string containing the text for generation
-  * a string containing `type` of a particular model
-  
-  For Stable Diffusion:
-  
-  * `seedVal`- seed generation
-  * `n_images` - number of images
-  * `steps` - generation steps
-  * `prompt_style` - add-ons for text (detailed, portrait photography realistic, animal, interior, postapocalyptic, steampunk, nature from tales, cinematic, cozy interior)
-
-## Expected result
-
-`Min-Dalle`
-
-> Text: rainy sunset
-
-<img src=https://i5.imageban.ru/out/2022/09/07/3b42e780f2787036122ab687d2bc9106.png width="280" > <img src=https://i4.imageban.ru/out/2022/09/07/fcc831f0238e3dbc2bf4c25e9214f7a0.png width="280" ><img src=https://i4.imageban.ru/out/2022/09/07/4ce30a90387f4b5ef6ddb5e7ad662c4a.png width="280" >
-
-`Stable Diffusion v1.5`
-
-> Text: mountains, flowers, lake, dark forest
-
-> Addition: nature from tales
-
-<img src=https://i4.imageban.ru/out/2023/03/13/e807343c22c79b8034905f1da19f25fe.png width="280" > <img src=https://i1.imageban.ru/out/2023/03/13/84d69ac95cdc9d518d7e4fa1b88ec697.png width="280" >  <img src=https://i5.imageban.ru/out/2023/03/13/0c09b98f70111dc6a9ec1adba159c1d2.png width="280" />
-
-`Stable Diffusion Beksinski Art`
-
-> Text: bus riding to school
-
-<img src=https://i3.imageban.ru/out/2023/03/13/0a567f57ae1dc895edfb62513f53bc0c.png width="280" > <img src=https://i6.imageban.ru/out/2023/03/13/2b43ca452a51973f4df270abfaa7bb2e.png width="280" > <img src=https://i4.imageban.ru/out/2023/03/13/81a17f9b4a0c2c3a1bc9ddf271cfe6fc.png width="280" >
-
----
-
-# Neural Image Generation version 2.0
-
-## Welcome
-The service receives a text and uses it as an input for a pre-trained model.
-
-## What’s the point?
-The service generates images that correspond to the text using machine learning methods. The service receives a text string and outputs images in binary format, representing generated images based on the received text. 
-
-## How does it work?
-
-This implementation assumes the use of one of two generation models at the user's choice `Min-Dalle` and `Stable Diffusion`.
-
-The user must provide a `string of text` to create images based on this string and `select a model` to generate.
-
-The service has several parameters that allow you to select the `type of model`:
-
-* `dalle`: Min-Dalle
-* `Stable Diffusion`: Stable Diffusion
-* `beksinski`: Stable Diffusion Beksinski Art
-* `guohua`: Stable Diffusion Guohua
-* `waifu`: Stable Diffusion Anime
-
-If parameter is active (1), then the model will be used.
-
-Inputs:
-
-* `metod`: image_generation
-* `input_data`: 
-  * a string containing the text for generation
-  * binary variable `type` to activate a particular model
-  
-  For Stable Diffusion:
-  
-  * `seedVal`- seed generation
-  * `n_images` - number of images
-  * `steps` - generation steps
-  * `H` - image height
-  * `W` - image width
-  * `prompt_style` - add-ons for text (detailed, portrait photography realistic, animal, interior, postapocalyptic, steampunk, nature from tales, cinematic, cozy interior)
-  
-## Expected result
-
-`Min-Dalle`
-
-> Text: rainy sunset
-
-<img src=https://i5.imageban.ru/out/2022/09/07/3b42e780f2787036122ab687d2bc9106.png width="280" > <img src=https://i4.imageban.ru/out/2022/09/07/fcc831f0238e3dbc2bf4c25e9214f7a0.png width="280" ><img src=https://i4.imageban.ru/out/2022/09/07/4ce30a90387f4b5ef6ddb5e7ad662c4a.png width="280" >
-
-`Stable Diffusion`
-
-> Text: mountains, flowers, lake, dark forest
-
-> Addition: nature from tales
-
-<img src=https://i4.imageban.ru/out/2023/03/13/e807343c22c79b8034905f1da19f25fe.png width="280" > <img src=https://i1.imageban.ru/out/2023/03/13/84d69ac95cdc9d518d7e4fa1b88ec697.png width="280" >  <img src=https://i5.imageban.ru/out/2023/03/13/0c09b98f70111dc6a9ec1adba159c1d2.png width="280" />
-
-`Stable Diffusion Beksinski Art`
-
-> Text: bus riding to school
-
-<img src=https://i3.imageban.ru/out/2023/03/13/0a567f57ae1dc895edfb62513f53bc0c.png width="280" > <img src=https://i6.imageban.ru/out/2023/03/13/2b43ca452a51973f4df270abfaa7bb2e.png width="280" > <img src=https://i4.imageban.ru/out/2023/03/13/81a17f9b4a0c2c3a1bc9ddf271cfe6fc.png width="280" >
