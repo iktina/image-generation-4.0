@@ -1,0 +1,16 @@
+model,id,add_prompt,H
+SD2_1,"checkpoints/stable-diffusion-2-1"," ",768
+SD2,"checkpoints/stable-diffusion-2"," ",768
+SD1_5,"checkpoints/stable-diffusion-v1-5/v1-5-pruned-emaonly.ckpt"," ",768
+beksinski,"checkpoints/stable-diffusion-v1-5/beksinski.ckpt",", beksinski style",512
+guohua,"checkpoints/stable-diffusion-v1-5/guohua.ckpt"," in guohua style",512
+waifu,"checkpoints/stable-diffusion-2-1/anything-v3-fp16-pruned.safetensors"," ",768
+inkpunk,"checkpoints/stable-diffusion-2-1/Inkpunk-Diffusion-v2.ckpt",", nvinkpunk",512
+dream_shaper,"checkpoints/stable-diffusion-2-1/DreamShaper_6_BakedVae.safetensors"," ",768
+open_journey,"checkpoints/stable-diffusion-v1-5/mdjrny-v4.ckpt",", mdjrny-v4 style",512
+icbinp,"checkpoints/icbinpICantBelieveIts_final.safetensors"," ",768
+dalle," "," ",512
+scribble,"control_v11p_sd15_scribble"," ",512
+img2img,"checkpoints/v1-5-pruned.ckpt"," ",512
+kandinsky2_1,"kandinsky/"," ",768
+kandinsky2_2,"kandinsky/"," ",768
